@@ -11,15 +11,25 @@ https://pubmed.ncbi.nlm.nih.gov/36127910/
   O objetivo desse trabalho busca descobrir se quanto mais ações de promoção a saúde maior será a saúde mental da população?
 
   Foi criado para facilitar o entendimento um dicionário de dados, podendo ser visto a seguir:
+  
 Assist_Soc - Assistente Sociais
+
 Psic - Psicólogo
+
 Psiqui	- Psiquiatra
+
 Acoes_prom	- Ações de Promoções e Prevenções a saúde
-Acoes_comp - Ações Complementares de atenção a saúde	
+
+Acoes_comp - Ações Complementares de atenção a saúde
+
 Ar_Ter_km2	- Área Territorial
+
 Pop_Est - Estimativa da População
+
 IDH	- Índice de Desenvolvimento Humano
+
 PIB - Produto Interno Bruto Per Capita
+
 
 Pré-processamento (limpeza, missings, outliers, feature engineering, formatação (números e texto), etc.
 
@@ -27,11 +37,12 @@ O processo do desenvolvimento desse trabalho se deu da seguinte forma:
   Foi utilizado dados no Tabnet - SUS (Quantidade de Assistentes Sociais, Psicólogos, Psiquiatra, Ações de Promoções e Prevenções a Saúde e Ações Complementares de atenção a saúde, além da quantidade de atendimentos realizados nos anos de 2017, 2018, 2019, 2020 e 2021)  e do IBGE (Área Territorial, Estimativa da População, Índice de Desenvolvimento Humano e Produto Interno Bruto).
   Foi realizado a limpeza dos arquivos csv, eliminando cabeçalhos e rodapés e combinando mais de um banco de dados, houve tratamento de caracteres não numerais, a codificação para latin-1.
   Na parte de pré-processamento foi criado 4 Data Frames e cada um referente a uma tabela, sendo: 
-DF1 - Ocupações de niveis superior, . Foi utilizada apenas as colunas referentes as profissões de assistente social, psicólogo e psiquiatra
-DF2 -
+DF1 - Tabela referente a ocupações de niveis superior. Foi utilizada apenas as colunas referentes as profissões de assistente social, psicólogo e psiquiatra
+DF2 - Tabela referente a copiladoss de dados da saúde de 2021. Foi utilizado os dados apresentados em ações de promoção e prevenção em saúde e
+       ações complementares de atenção a saude
 DF3 -
 DF4 -
-Como a minha tabela possuia todos os municipios selecionei apenas os do estado do Paraná (Os municípios do Paraná começam com o número 41, pois é 4º região e o 1º estado)
+Como a minha tabela possuía todos os municipios selecionei apenas os do estado do Paraná (Os municípios do Paraná começam com o número 41, pois é 4º região e o 1º estado); como também escolhi na tabela de profissionais disponibilizadas pelo governo os profissionais de assistência social, psicólogos e psiquiatras pois são os profissionais que lidam com saúde mental.
 
 Análise Exploratória 
 
